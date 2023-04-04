@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/* 1.sayfa stilleri.. */
+body {
+    height: 100vh;
+    background-color: #57C5B6;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+#firstPage {
+    height: 100vh;
+}
+
+#secondPage {
+    height: 100vh;
+
+}
+
+#thirdPage {
+    height: 100vh;
+    color: #F29D1E;
+    background-image: url("./images/backgroundimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fourthPage {
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+.left-side ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.left-side li {
+    list-style: none;
+
+
+}
+
+.left-side li a {
+    text-decoration: none;
+    font-family: 'poppins';
+    font-size: 20px;
+    color: #002B5B;
+    font-weight: 700;
+}
+
+.left-side li a:hover {
+    color: #FF9F00;
+    letter-spacing: 2px;
+}
+
+.info span {
+    color: #1A5F7A;
+}
+
+
+
+.elips {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.elips img {
+    opacity: 0.2;
+    z-index: -2;
+}
+
+.sec-main {
+    margin: 60px 50px;
+    display: flex;
+    position: relative;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 0;
+    letter-spacing: 3px;
+
+
+}
+
+.info h1 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.info p {
+    color: white;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 15px;
+}
+
+.img-div {
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+.advirs {
+    background-color: #002B5B;
+    margin: 100px -120px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 30px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 20px white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.advirs h1 {
+    color: white;
+}
+
+/* ikinci sayfa */
+
+/* kartlar section'ı */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    height: 90%;
+    padding-top: 100px;
+}
+
+.card {
+
+    width: 300px;
+    height: auto;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card h2 {
+    padding-bottom: 22px;
+}
+
+.card-img {
+    width: 80%;
+    height: 80%;
+
+}
+
+.card-img img {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.card button {
+    padding: 20px 20px;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.card button:hover {
+    background-image: linear-gradient(180deg, #08AEEA 0%, #2AF598 100%);
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 4px 4px #002B5B;
+}
+
+/* 3.sayfa */
+/* choose secitonı */
+.choose {
+    width: 100%;
+    height: 100%;
+
+}
+
+.why {
+
+    height: 300px;
+    padding-top: 50px;
+
+
+}
+
+.why h1 {
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.why p {
+
+    text-align: center;
+    font-weight: 1000;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.why .devices {
+    position: absolute;
+    right: 0;
+}
+
+.footer {
+
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 80px;
+
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    height: 270px;
+    width: 270px;
+    background-color: #F29D1E;
+    border-radius: 60px;
+    color: white;
+    position: relative;
+}
+
+.info-card {
+
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-right: 250px;
+    margin-bottom:40px;
+    gap: 10px;
+
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+    box-shadow: 4px 4px #002B5B;
+    background-color: #57C5B6;
+}
+
+.card1 img {
+    width: 40px;
+    padding-top: 40px;
+    position: absolute
+}
+
+.card1 h3 {
+    position: absolute;
+    top: 100px;
+    padding: 0 20px;
+}
+
+.card1 p {
+    position: absolute;
+    top: 140px;
+    padding: 0 20px;
+}
+
+.card2 img {
+    width: 40px;
+    padding-top: 40px;
+    position: absolute
+}
+
+.card2 h3 {
+    position: absolute;
+    top: 100px;
+    padding: 0 20px;
+}
+
+.card2 p {
+    position: absolute;
+    top: 140px;
+    padding: 0 20px;
+}
+
+.card3 img {
+    width: 40px;
+    padding-top: 40px;
+    position: absolute
+}
+
+.card3 h3 {
+    position: absolute;
+    top: 100px;
+    padding: 0 20px;
+}
+
+.card3 p {
+    position: absolute;
+    top: 140px;
+    padding: 0 20px;
+}
+
+.card4 h3 {
+    position: absolute;
+    top: 100px;
+    padding: 0 20px;
+}
+
+.card4 p {
+    position: absolute;
+    top: 140px;
+    padding: 0 20px;
+}
+
+.appoinment {
+
+    visibility: hidden;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: #F29D1E;
+    width: 400px;
+    border-radius: 30px;
+    padding: 20px 0;
+
+    color: black;
+
+}
+
+.randevuol {
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+
+
+}
+
+.randevuol:hover {
+    background-color: #57C5B6;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+
+.comments {
+    height: 90%;
+    display: flex;
+    
+}
+
+.commendcard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 90px 90px 0;
+    
+    height: 200px;
+    width: 600px;
+    position: relative; 
+    background-color: #F29D1E;
+    color: white;
+}
+
+ .right {
+
+    border-radius: 90px 0 0 90px;
+   
+    height: 200px;
+    width: 600px;
+    position: relative;
+
+    background-color: #F29D1E;
+    color: white;
+    margin-left: 66px;
+}
+.rightcomment {
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    position: relative;
+  
+}
+
+.img-container1 {
+
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url("./images/commend1.png");
+    background-size: cover;
+}
+
+.img-container2 {
+
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url("./images/commend4.png");
+    background-size: cover;
+}
+
+.img-container3 {
+
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url("./images/commend2.png");
+    background-size: cover;
+}
+
+
+.img-container4 {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url("./images/commend3.png");
+    background-size: cover;
+}
+
+.img-container5 {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url("./images/commend5.png");
+    background-size: cover;
+}
+
+.img-container6 {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url("./images/commend5.png");
+    background-size: cover;
+}
+
+.img-container img {
+    height: 140px;
+    width: 150px;
+}
+
+ .commendcard .text {
+
+
+    margin-top: 60px;
+
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+ .text2 {
+
+
+    margin-top: 60px;
+
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+}
+
+.commendcard h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.right h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.commendcard p {
+    padding-top: 20px;
+    text-align: center
+}
+
+.commendcard small {
+    text-align: center;
+
+}
+
+.commentContainers {
+    height: 70%;
+    width: 70%;
+   background-color: white;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+.leftcomment {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#fourthPage h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F29D1E;
+    font-size: 46px;
+    text-shadow:2px 2px 10px #F29D1E;
+    padding-top: 100px;
+}
+#fifthPage{
+    height: 100vh;
+}
+
+ .boxes {
+    
+    width: 90%;
+    height: 95%;
+    margin-left: 130px;
+    padding-top: 80px; 
+    display: grid;
+    grid-template-columns: 550px 550px 550px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 20px; /* kutular arasındaki boşluk */
+    
+    overflow: hidden; /*taşma engellendi.*/
+  }
+  
+.box{
+    
+    background-color:transparent;
+    color: white;
+    border: 3px solid #F29D1E;
+    padding: 8px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.box {
+    text-align: center;
+    text-shadow: 2px 2px 10px #FFD966;
+    color: white;
+}
+.box:hover{
+    background-color: white;
+    color: #F29D1E;
+    
+    cursor: pointer;
+}
+.box h3:hover{
+    color: #F29D1E;
+}
+
+.box:nth-child(1){
+    grid-column:  span 3;
+}
+.box:nth-child(7){
+    grid-column:  span 3;
+}
+.box:nth-child(3){
+grid-row: 2 span;
+
+}
+.box img{
+    width:100px ;
+
+}
+/* .ambulance{
+    width: 200px;
+}
+.customer{
+    width: 200px;
+} */
+   */
+
+  
+  
+
